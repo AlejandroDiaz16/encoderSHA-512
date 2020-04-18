@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.security.MessageDigest;
 
 public class Cliente {
     public static void main(String[] args) throws IOException {
@@ -28,7 +27,7 @@ public class Cliente {
 
         System.out.println("Token  verificar");
         String token = br.readLine();
-        if(new EncoderPass().match(password,user,token)){ System.out.println("allowed");
+        if(new EncoderPass().match(password,user,token)){ System.out.println("Allowed");
         }else{ System.out.println("Not Allowed"); }
     }
 }
