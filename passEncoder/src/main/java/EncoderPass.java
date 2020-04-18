@@ -19,9 +19,9 @@ public class EncoderPass {
         return toReturn;
     }
 
-    public boolean match(String pass, User user){
+    public boolean match(String pass, User user, String token){
         final String code = encondePass(pass,user);
-        if(code.equals("")){return true;}
+        if(code.equals(token)){return true;}
         else{return false;}
     }
 }
